@@ -4,6 +4,7 @@ body{
   margin: 0px;
   font-family: "Poppins", "Inter", sans-serif;
   background-color: #faf9fb;
+  overflow-x: hidden;
 }
 
 .heroContainer {
@@ -404,22 +405,231 @@ text-align: center;
 }
 
 @media (max-width: 760px) {
+  .navBar {
+    top: 12px;
+    width: calc(100% - 24px);
+    height: 54px;
+    padding-inline: 6px;
+    border-radius: 28px;
+    gap: 6px;
+  }
+
+  .bot{
+    margin-left: 6px;
+    flex-shrink: 0;
+  }
+
+  .navlinks{
+    flex: 1;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .navBar a {
+    width: auto;
+    flex: 1;
+    min-width: 0;
+    padding: 8px 6px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .navBar a:hover{
+    width: auto;
+    padding: 8px 6px;
+  }
+
+  .profile {
+    min-height: 100svh;
+    height: auto;
+    padding: 96px 18px 54px;
+    box-sizing: border-box;
+  }
+
+  .hero {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 0;
+    flex-direction: column;
+    gap: 26px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacts{
+    flex-direction: row;
+    gap: 18px;
+    order: 2;
+  }
+
+  .heroContainer {
+    width: 100%;
+    align-items: center;
+  }
+
+  .bonjour {
+    font-size: 22px;
+  }
+
+  .name {
+    width: auto;
+    max-width: 100%;
+    font-size: 34px;
+    line-height: 1.12;
+  }
+
+  .heroContainer p {
+    width: 100%;
+    max-width: 340px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
   .toolsSection {
-    padding: 42px 0;
+    padding: 30px 0 22px;
+  }
+
+  .toolsHeader {
+    width: calc(100% - 32px);
+    margin-bottom: 18px;
   }
 
   .toolsHeader h2,
   .contactInner h2 {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .marqueeWrapper {
+    padding: 0.8rem 0;
+  }
+
+  .marqueeTrack {
+    gap: 0.75rem;
+    animation-duration: 24s;
   }
 
   .marqueeItem {
-    min-width: 150px;
-    padding: 12px 14px;
+    min-width: 116px;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .marqueeItem img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .marqueeItem span {
+    font-size: 12px;
+  }
+
+  .formations {
+    height: 680px;
+    padding: 32px 16px;
+    gap: 42px;
+    box-sizing: border-box;
+  }
+
+  .formationTextSlot {
+    width: 100%;
+    height: 250px;
+  }
+
+  .formations p{
+    max-width: 320px;
+    font-size: 34px;
+    line-height: 1.25;
+  }
+
+  .formations p.formationMainAnswer {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .formationMarkdown {
+    width: 100%;
+    max-height: 250px;
+    font-size: 15px;
+    line-height: 1.6;
+    padding-inline: 4px;
+    box-sizing: border-box;
+  }
+
+  .formationMarkdown p {
+    max-width: none;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+  }
+
+  .formationMarkdown :where(h1, h2, h3) {
+    font-size: 18px;
+  }
+
+  .formationActions {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .inputContainer input {
+    height: 48px;
+    padding-left: 18px;
+    padding-right: 52px;
+    font-size: 13px;
+  }
+
+  .inputContainer button {
+    height: 40px;
+    width: 40px;
+  }
+
+  .contactSection {
+    padding: 54px 16px;
+  }
+
+  .contactInner {
+    width: 100%;
   }
 
   .contactGrid {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .contactItem {
+    min-height: 112px;
+    padding: 18px;
+  }
+
+  .contactItem strong {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .navBar {
+    width: calc(100% - 16px);
+  }
+
+  .navBar a {
+    font-size: 11px;
+    padding-inline: 4px;
+  }
+
+  .bot {
+    display: none;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .formations p{
+    font-size: 31px;
   }
 }
 
