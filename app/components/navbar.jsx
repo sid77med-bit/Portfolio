@@ -6,10 +6,11 @@ export default function NavBar() {
   return (
     <div className={styles.navBar}>
       <Bot className={styles.bot} size={30} color="white"/>
-      <Link className={styles.active} href="#">Profile</Link>
-      <Link href="~#">Formations</Link>
-      <Link href="#">Expériences</Link>
-      <Link href="#">Compétences</Link>
+      <div className={styles.navlinks}>
+      <Link className={styles.active} href="#profile">Profile</Link>
+      <Link href="#assistant">Assistant</Link>
+      <Link href="#contact">Contact</Link>
+      </div>
     </div>
   );
 }

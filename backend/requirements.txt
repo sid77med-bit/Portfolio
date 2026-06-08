@@ -1,0 +1,13 @@
+langchain
+langchain-groq
+langchain-community
+langchain-text-splitters
+langchain-chroma
+pymupdf
+langchain-huggingface
+langchain-classic
+sentence-transformers
+flashrank
+fastapi
+uvicorn
+python-dotenv

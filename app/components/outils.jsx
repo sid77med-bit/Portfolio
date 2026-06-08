@@ -15,15 +15,17 @@ export default function Outils() {
     { src: "/GitHub.png", alt: "GitHub" },
   ];
   return (
-    <div className={styles.marqueeWrapper}>
-      <div className={styles.marqueeTrack}>
-        {[...logos, ...logos].map((logo, i) => (
-          <div className={styles.marqueeItem} key={i}>
-            <img src={logo.src} alt={logo.alt} />
-            <span>{logo.alt}</span>
-          </div>
-        ))}
+    <section className={styles.toolsSection} aria-label="Outils et technologies">
+      <div className={styles.marqueeWrapper}>
+        <div className={styles.marqueeTrack}>
+          {[...logos, ...logos].map((logo, i) => (
+            <div className={styles.marqueeItem} key={`${logo.alt}-${i}`}>
+              <img src={logo.src} alt={logo.alt} />
+              <span>{logo.alt}</span>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
