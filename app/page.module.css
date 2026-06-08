@@ -408,7 +408,7 @@ text-align: center;
   .navBar {
     top: 12px;
     width: calc(100% - 24px);
-    height: 54px;
+    height:45px;
     padding-inline: 6px;
     border-radius: 28px;
     gap: 6px;
@@ -417,6 +417,7 @@ text-align: center;
   .bot{
     margin-left: 6px;
     flex-shrink: 0;
+    display: none;
   }
 
   .navlinks{
@@ -449,7 +450,7 @@ text-align: center;
   .hero {
     width: 100%;
     max-width: 420px;
-    margin-top: 0;
+    margin-top: 120px;
     flex-direction: column;
     gap: 26px;
     align-items: center;
