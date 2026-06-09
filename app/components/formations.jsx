@@ -50,6 +50,7 @@ export default function Formations() {
 
   return (
     <section className={styles.formations} id="assistant">
+      <h5>ASSISTANT</h5>
       <div className={styles.formationTextSlot}>
         {answer && !isLoading && !error ? (
           <div className={styles.formationMarkdown}>
@@ -57,7 +58,7 @@ export default function Formations() {
           </div>
         ) : (
           <p className={isLoading || error ? styles.formationMainAnswer : undefined}>
-            {isLoading && "Recherche en cours..."}
+            {isLoading && "Un instant..."}
             {error && error}
             {!isLoading && !error && "Let's talk about me ..."}
           </p>
