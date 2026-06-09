@@ -368,6 +368,10 @@ color: rgb(246, 67, 67);
   margin: 0 auto;
 }
 
+.contactInner h2{
+  width: 300px;
+}
+
 .contactGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -405,12 +409,14 @@ color: rgb(246, 67, 67);
   color: #777;
   font-size: 13px;
   font-weight: 600;
+  
 }
 
 .contactItem strong {
   color: #121212;
   font-size: 16px;
   overflow-wrap: anywhere;
+  
 }
 
 @media (max-width: 760px) {
