@@ -5,9 +5,9 @@ import {Bot} from "lucide-react"
 export default function NavBar() {
   return (
     <div className={styles.navBar}>
-      <Bot className={styles.bot} size={30} color="white"/>
+      <Bot className={styles.bot} size={25} color="white"/>
       <div className={styles.navlinks}>
-      <Link className={styles.active} href="#profile">Profile</Link>
+      <Link href="#profile">Profile</Link>
       <Link href="#assistant">Assistant</Link>
       <Link href="#contact">Contact</Link>
       </div>
